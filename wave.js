@@ -4,7 +4,7 @@ function setup() {
     const screen = {
         width: 800,
         height: 800,
-        title: "practice",
+        title: "wave",
         FPS: 50,
     }
 
@@ -34,7 +34,7 @@ function draw(world) {
         x++;
         y -= Math.cos(i * Math.PI / 180) * 1.5;
         if (i % 10 === 0)
-            r.DrawTexture(target.texture, x, y + 100, r.WHITE);
+            r.DrawTexture(target.texture, x + 100, y + 100, r.WHITE);
     }
     r.EndDrawing();
 }
