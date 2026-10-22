@@ -32,8 +32,8 @@ function draw(world) {
     r.ClearBackground(r.DARKGRAY);
     for (let i = 0; i < 361; i++) {
         x++;
-        y -= Math.cos(i * Math.PI / 180) * 1.5;
-        if (i % 10 === 0)
+        y = -100 * Math.sin((i * Math.PI / 180) * 2);
+        if (i % 3 === 0)
             r.DrawTexture(target.texture, x + 100, y + 100, r.WHITE);
     }
     r.EndDrawing();
